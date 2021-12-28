@@ -8,7 +8,7 @@
 *                   unwanted strings, each in a new ine
 *
 * followers.txt  : Copy all your follower list (cntrl+a, cntrl+c)
-*                  This should copy all your followers with some other
+*                  This should copy all your connections with some other
 *                  unwanted strings, each in a new ine
 *
 * keys :           You can modify the keys based on your output needed to be
@@ -36,7 +36,7 @@ using namespace std;
 bool
 notKeyWord(const string& str)
 {
-    vector<string> keys = {"is", "reachable", "Connections", "followers", "connected", "message", "Connected", "Followed", "Follow", 
+    vector<string> keys = {"is", "at", "&", ":", "reachable", "Connections", "followers", "connected", "message", "Connected", "Followed", "Follow", 
                             "Message", "Search", "name", "occupation", "|", "||", "added", "notifications"};
     for (auto key : keys)
     {
@@ -68,9 +68,7 @@ main()
     while(getline(yourFollowers, temp))
     {
         if (connectionSet.find(temp) == connectionSet.end() && notKeyWord(temp))
-        {
             minusSet.insert(temp);
-        }
         temp.clear();
     }
 
