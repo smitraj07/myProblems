@@ -8,7 +8,7 @@
 *                   unwanted strings, each in a new ine
 *
 * followers.txt  : Copy all your follower list (cntrl+a, cntrl+c)
-*                  This should copy all your connections with some other
+*                  This should copy all your followers with some other
 *                  unwanted strings, each in a new ine
 *
 * keys :           You can modify the keys based on your output needed to be
